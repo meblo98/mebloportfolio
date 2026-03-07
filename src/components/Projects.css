@@ -1,0 +1,208 @@
+.projects {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, rgba(10, 10, 20, 0.9) 0%, rgba(20, 10, 30, 0.8) 100%);
+  border-top: 1px solid rgba(100, 200, 255, 0.1);
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.project-card {
+  background: rgba(100, 200, 255, 0.05);
+  border: 1px solid rgba(100, 200, 255, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  background: rgba(100, 200, 255, 0.1);
+  border-color: rgba(100, 200, 255, 0.4);
+  box-shadow: 0 10px 30px rgba(100, 200, 255, 0.15);
+}
+
+.project-card.featured {
+  grid-column: span 1;
+  border-color: rgba(168, 85, 247, 0.4);
+}
+
+.project-card.featured:hover {
+  border-color: rgba(168, 85, 247, 0.6);
+  box-shadow: 0 10px 30px rgba(168, 85, 247, 0.2);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, rgba(100, 200, 255, 0.1), rgba(168, 85, 247, 0.1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(100, 200, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.project-image::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(100, 200, 255, 0.1) 1px, transparent 1px);
+  background-size: 30px 30px;
+  animation: moveGrid 10s linear infinite;
+}
+
+.project-emoji {
+  font-size: 4rem;
+  z-index: 10;
+  position: relative;
+}
+
+.project-content {
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 0.8rem 0;
+}
+
+.project-description {
+  font-size: 0.95rem;
+  color: #b0b0b0;
+  line-height: 1.6;
+  margin: 0 0 1.5rem 0;
+  flex: 1;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.tech-tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: rgba(100, 200, 255, 0.15);
+  border: 1px solid rgba(100, 200, 255, 0.3);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: #64c8ff;
+  font-weight: 500;
+}
+
+.project-link {
+  background: linear-gradient(135deg, #64c8ff, #a855f7);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.project-link:hover {
+  transform: translateX(5px);
+  box-shadow: 0 5px 15px rgba(100, 200, 255, 0.3);
+}
+
+.featured-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: linear-gradient(135deg, #a855f7, #64c8ff);
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+/* CTA Section */
+.cta-section {
+  margin-top: 4rem;
+  padding: 3rem;
+  background: rgba(100, 200, 255, 0.08);
+  border: 1px solid rgba(100, 200, 255, 0.2);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.cta-section h3 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin: 0 0 1.5rem 0;
+}
+
+.cta-btn {
+  padding: 1rem 2.5rem;
+  background: linear-gradient(135deg, #64c8ff, #a855f7);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(100, 200, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 3rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .project-card.featured {
+    grid-column: span 1;
+  }
+
+  .project-image {
+    height: 150px;
+  }
+
+  .project-emoji {
+    font-size: 3rem;
+  }
+
+  .cta-section {
+    padding: 2rem 1rem;
+  }
+
+  .cta-section h3 {
+    font-size: 1.3rem;
+  }
+}
