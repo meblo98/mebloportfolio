@@ -37,9 +37,15 @@ export default function Contact() {
       link: socialLinks.email,
     },
     {
+      icon: '📞',
+      label: 'Téléphone',
+      value: personalInfo.phone,
+      link: `tel:${personalInfo.phone.replace(/\s/g, '')}`,
+    },
+    {
       icon: '💼',
       label: 'LinkedIn',
-      value: 'MOUHAMED EL BACHIR LO',
+      value: 'Mouhamed El Bachir Lo',
       link: socialLinks.linkedin,
     },
     {
@@ -50,7 +56,7 @@ export default function Contact() {
     },
     {
       icon: '🌍',
-      label: 'Location',
+      label: 'Localisation',
       value: personalInfo.location,
       link: '#',
     },

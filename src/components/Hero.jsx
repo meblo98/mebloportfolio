@@ -39,11 +39,11 @@ export default function Hero() {
           </motion.div>
 
           <motion.h1 variants={itemVariants} className="hero-title">
-            Je construis des <span className="gradient-text">solutions web performantes</span> qui résolvent vos défis métier
+            Développeur Full Stack | <span className="gradient-text">Laravel • Angular • JavaScript</span>
           </motion.h1>
 
           <motion.p variants={itemVariants} className="hero-description">
-            Développeur Full Stack spécialisé en Laravel, Angular et Docker. Je transforme vos idées en applications robustes, scalables et innovantes. Basé au Sénégal, j'accompagne des projets de toutes tailles.
+            Expert en résolution de problèmes complexes et en innovation digitale. Je conçois des solutions performantes et scalables pour transformer vos défis métier en succès technologiques.
           </motion.p>
 
           <motion.div variants={itemVariants} className="cta-buttons">

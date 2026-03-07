@@ -34,28 +34,28 @@ export default function About() {
           <motion.div variants={itemVariants} className="about-text">
             <h2 className="section-title">À propos</h2>
             <p>
-              Je suis Mouhamed El Bachir Lo, développeur Web Full Stack basé au Sénégal avec plus de 4 ans d'expérience dans la conception et le développement d'applications web complexes. Je me spécialise dans la transformation de défis technologiques en solutions simples, efficaces et performantes.
+              Développeur web passionné avec une solide expérience dans la conception d'applications robustes utilisant Laravel et Angular. Je me spécialise dans la création et la consommation d'API REST, ainsi que dans le développement de dashboards dynamiques et performants.
             </p>
             <p>
-              Ma philosophie: comprendre le problème métier avant de coder. Je travaille en étroite collaboration avec mes clients pour délivre des produits qui non seulement fonctionnent, mais qui créent également de la valeur réelle pour leurs utilisateurs.
+              Mon expertise couvre l'ensemble du cycle de développement, de l'intégration UI/UX responsive à la gestion de l'authentification complexe et des rôles utilisateurs. J'accorde une importance capitale à l'ergonomie et à la sécurité de mes solutions.
             </p>
             <p>
-              Mon approche combine expertise technique (Laravel, Angular, MySQL, Docker), bonnes pratiques de développement et compréhension des enjeux métier pour créer des applications scalables, maintenables et évolutives.
+              Tourné vers l'avenir, j'approfondis actuellement mes compétences en <strong>Analyse de Données</strong> pour apporter une dimension prédictive et analytique à mes futurs développements web.
             </p>
           </motion.div>
 
           <motion.div variants={itemVariants} className="about-stats">
             <div className="stat">
-              <h3 className="stat-number">4+</h3>
-              <p className="stat-label">Années d'expérience</p>
+              <h3 className="stat-number">2025</h3>
+              <p className="stat-label">Objectif : Data Analysis</p>
             </div>
             <div className="stat">
-              <h3 className="stat-number">15+</h3>
-              <p className="stat-label">Projets livrés</p>
+              <h3 className="stat-number">Full</h3>
+              <p className="stat-label">Stack Developer</p>
             </div>
             <div className="stat">
-              <h3 className="stat-number">5k+</h3>
-              <p className="stat-label">Utilisateurs actifs</p>
+              <h3 className="stat-number">Dakar</h3>
+              <p className="stat-label">Sénégal</p>
             </div>
           </motion.div>
         </motion.div>
@@ -71,15 +71,11 @@ export default function About() {
             <div className="profile-image">
               <div className="code-animation">
                 <pre>{`const meblo = {
-  nom: "El Bachir Lo",
-  titre: "Full Stack Dev",
-  expertise: [
-    "Laravel",
-    "Angular",
-    "Docker"
-  ],
-  passion: "Résoudre ✓",
-  location: "🇸🇳 Sénégal"
+  nom: "Mouhamed El Bachir Lo",
+  role: "Développeur Full Stack",
+  stacks: ["Laravel", "Angular", "JS"],
+  learning: "Data Analysis 📊",
+  localisation: "Dakar, Sénégal 🇸🇳"
 }`}</pre>
               </div>
             </div>

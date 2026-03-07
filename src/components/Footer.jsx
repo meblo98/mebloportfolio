@@ -60,6 +60,15 @@ export default function Footer() {
             >
               Twitter
             </motion.a>
+            <motion.a
+              href={socialLinks.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-link"
+              whileHover={{ scale: 1.2, rotate: 5 }}
+            >
+              Instagram
+            </motion.a>
           </div>
         </div>
       </motion.div>

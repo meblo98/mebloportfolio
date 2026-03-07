@@ -4,54 +4,132 @@
 export const personalInfo = {
   name: "Mouhamed El Bachir Lo",
   pseudo: "meblo",
-  title: "Développeur Web Full Stack",
-  subtitle: "Laravel • Angular • PHP • JavaScript • MySQL • Docker",
-  location: "Sénégal",
-  email: "contact@meblo.dev",
-  phone: "+221 76 XXX XXXX",
-  bio: "Passionné par la création de solutions digitales robustes et scalables. Je transforme des défis complexes en applications performantes, en mettant l'accent sur la qualité du code, l'expérience utilisateur et l'architecture durable.",
+  title: "Développeur Full Stack | Laravel • Angular • JavaScript",
+  subtitle: "Expert en résolution de problèmes et innovation digitale.",
+  location: "Dakar, Sénégal",
+  email: "lomouhamedelbachir@gmail.com",
+  phone: "+221 77 316 20 01",
+  bio: "Développeur web passionné avec expérience en Laravel, Angular et développement d’API REST. Spécialisé en intégration UI/UX responsive, authentification et dashboards dynamiques. Actuellement en apprentissage de l’Analyse de Données pour apporter une dimension data-driven à mes projets.",
 };
 
 // Réseaux sociaux
 export const socialLinks = {
-  github: "https://github.com/meblo",
-  linkedin: "https://linkedin.com/in/mouhamed-el-bachir-lo",
-  twitter: "https://twitter.com/meblo_dev",
-  website: "https://meblo.dev",
-  email: "mailto:contact@meblo.dev",
+  github: "https://github.com/meblo98",
+  linkedin: "https://www.linkedin.com/in/mouhamed-el-bachir-lo-developpement-web/",
+  email: "mailto:lomouhamedelbachir@gmail.com",
+  whatsapp: "https://wa.me/221773162001",
+  twitter: "https://x.com/Mouhame17780821",
+  instagram: "https://www.instagram.com/meblo_barham_atijani/",
 };
 
-// Compétences avec niveaux
+// Compétences par catégories
 export const skills = {
   frontend: {
     category: "Frontend",
     icon: "🎨",
-    items: ["Angular", "JavaScript", "TypeScript", "HTML5", "CSS3", "Responsive Design"],
+    items: ["HTML5", "CSS3", "JavaScript", "TypeScript", "Angular", "Vue.js", "Bootstrap", "Tailwind"],
   },
   backend: {
     category: "Backend",
     icon: "⚙️",
-    items: ["Laravel", "PHP", "RESTful APIs", "MySQL", "PostgreSQL", "Authentification"],
+    items: ["PHP", "Laravel", "Java", "Python", "Django", "REST API"],
+  },
+  databases: {
+    category: "Bases de données",
+    icon: "🗄️",
+    items: ["MySQL", "PostgreSQL", "Firebase"],
   },
   devops: {
-    category: "DevOps",
+    category: "DevOps & Outils",
     icon: "🚀",
-    items: ["Docker", "Nginx", "Linux", "CI/CD", "Déploiement", "Monitoring"],
+    items: ["Git", "GitHub", "Docker", "Nginx", "Postman", "VS Code", "Figma"],
   },
-  tools: {
-    category: "Outils",
-    icon: "🛠️",
-    items: ["Git", "Composer", "NPM", "VS Code", "Postman", "MySQL Workbench"],
-  },
+  data: {
+    category: "Data (En cours)",
+    icon: "📊",
+    items: ["Analyse de données", "Manipulation de données", "Visualisation"],
+  }
 };
 
-// Niveaux de maîtrise
-export const proficiencyLevels = [
-  { name: "Laravel/PHP", level: 95 },
-  { name: "Angular", level: 92 },
-  { name: "JavaScript", level: 93 },
-  { name: "MySQL", level: 90 },
-  { name: "Docker", level: 88 },
+// Expériences Professionnelles
+export const experiences = [
+      {
+    company: "CERIP",
+    period: "Septembre 2025 - Janvier 2026",
+    role: "Freelance",
+    description: [
+      "Développement d’applications Angular & Laravel",
+      "Création et consommation d’API REST",
+      "Authentification et gestion des rôles",
+      "Travail en équipe agile avec Git"
+    ]
+  },
+    {
+    company: "Tacktyl Labs",
+    period: "Septembre 2025 - Decembre 2025",
+    role: "Prestation",
+    description: [
+      "Développement d’applications Angular & Laravel",
+      "Création et consommation d’API REST",
+      "Authentification et gestion des rôles",
+      "Travail en équipe agile avec Git"
+    ]
+  },
+  {
+    company: "Tacktyl Labs",
+    period: "Février 2025 - Août 2025",
+    role: "Stage",
+    description: [
+      "Développement d’applications Angular & Laravel",
+      "Création et consommation d’API REST",
+      "Authentification et gestion des rôles",
+      "Travail en équipe agile avec Git"
+    ]
+  },
+  {
+    company: "Defarci",
+    period: "Octobre 2023 - 1 mois",
+    role: "Intégrateur Web",
+    description: [
+      "Intégration HTML/CSS",
+      "Composants dynamiques JavaScript",
+      "Collaboration Git"
+    ]
+  }
+];
+
+// Formations
+export const education = [
+
+  {
+    degree: "CPS Développement Web & Web Mobile",
+    school: "Simplon Sénégal",
+    year: "2024"
+  },
+  {
+    degree: "Licence 3 Génie Logiciel & Sécurité",
+    school: "Institut Polytechnique des Métiers",
+    year: "2022"
+  },
+  {
+    degree: "Licence 2 Physique Chimie",
+    school: "FST - UCAD",
+    year: "2022"
+  },
+  {
+    degree: "Baccalauréat S2",
+    school: "Lycée Keur Madiabel",
+    year: "2020"
+  }
+];
+
+// Certifications
+export const certifications = [
+  { name: "Certificat Développement Web Full Stack", provider: "Xarala" },
+  { name: "Certificat Low Code / No Code", provider: "Force N" },
+  { name: "Certificat Fondamentaux de la Programmation", provider: "Udacity" },
+  { name: "Certificat Programmation Orientée Objet Java", provider: "Coursera" },
+  { name: "Certificat Développement Mobile", provider: "Force N" }
 ];
 
 // Projets
@@ -59,26 +137,26 @@ export const projects = [
   {
     id: 1,
     title: "Altopé",
-    description: "Plateforme de suivi et d'évaluation pour incubateurs. Gestion complète des portefeuilles d'entreprises, suivi de performance et génération de rapports analytiques.",
-    tech: ["Laravel", "Angular", "MySQL", "Docker", "Nginx"],
+    description: "Plateforme de suivi et évaluation pour incubateur.",
+    tech: ["Django", "React", "PostgreSQL", "React native"],
     image: "📊",
-    link: "#",
+    link: "https://www.altoppe.sn/",
     featured: true,
   },
   {
     id: 2,
-    title: "E-Commerce",
-    description: "Plateforme e-commerce complète avec catalogue intelligent, panier persistant, système de paiement intégré et gestion d'inventaire en temps réel.",
-    tech: ["Laravel", "Angular", "MySQL", "REST API"],
+    title: "E-commerce",
+    description: "Plateforme de vente en ligne complète.",
+    tech: ["Laravel", "MySQL"],
     image: "🛒",
-    link: "https://itholding.meblo.cloud",
+    link: "https://itholdingsn.meblo.cloud",
     featured: true,
   },
   {
     id: 3,
     title: "Vendeur Pro",
-    description: "Plateforme SaaS de formation marketing. Espace de cours interactif, gestion de communauté, et tableau de bord de progression pour les utilisateurs.",
-    tech: ["Laravel", "PHP", "JavaScript", "MySQL", "Docker"],
+    description: "Plateforme de formation marketing.",
+    tech: ["Laravel", "PHP", "JavaScript"],
     image: "📚",
     link: "#",
     featured: true,
@@ -86,35 +164,30 @@ export const projects = [
   {
     id: 4,
     title: "Xamsa Maternité",
-    description: "Système de gestion de santé materno-infantile. Suivi des grossesses, des naissances, vaccinations et consultations médicales avec historique complet.",
-    tech: ["Laravel", "MySQL", "Angular", "REST API"],
+    description: "Gestion santé materno-infantile.",
+    tech: ["Laravel", "Angular", "MySQL"],
     image: "👶",
     link: "#",
+    featured: true,
   },
 ];
 
 // Thème et couleurs
 export const theme = {
   colors: {
-    primary: "#64c8ff", // Cyan
-    secondary: "#a855f7", // Violet
-    bgDark: "#0a0a14", // Fond sombre
-    bgDarker: "#050508", // Fond plus sombre
-    textLight: "#e0e0e0", // Texte clair
-    textGray: "#b0b0b0", // Texte gris
-    border: "rgba(100, 200, 255, 0.2)", // Bordure
+    primary: "#00d1ff", // Cyan électrique
+    secondary: "#7000ff", // Violet profond
+    accent: "#ffffff", // Blanc pour les accents technologiques
+    bgDark: "#0a0a0c", // Fond ultra sombre
+    bgDarker: "#050505", // Fond noir
+    textLight: "#f0f0f0", // Texte blanc cassé
+    textGray: "#a0a0a0", // Texte gris
+    border: "rgba(0, 209, 255, 0.2)", // Bordure cyan translucide
   },
   fonts: {
-    primary: "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto'",
+    primary: "'Inter', sans-serif",
   },
 };
-
-// Statistiques
-export const stats = [
-  { label: "Années d'expérience", value: "4+" },
-  { label: "Projets livrés", value: "15+" },
-  { label: "Utilisateurs satisfaits", value: "5k+" },
-];
 
 // Messages du formulaire
 export const messages = {
@@ -122,7 +195,7 @@ export const messages = {
   formError: "Une erreur s'est produite. Veuillez réessayer ou m'envoyer un email directement.",
   formPlaceholders: {
     name: "Votre nom complet",
-    email: "votre@entreprise.com",
+    email: "votre@email.com",
     message: "Parlez-moi de votre projet...",
   },
 };
@@ -131,9 +204,10 @@ export default {
   personalInfo,
   socialLinks,
   skills,
-  proficiencyLevels,
+  experiences,
+  education,
+  certifications,
   projects,
   theme,
-  stats,
   messages,
 };

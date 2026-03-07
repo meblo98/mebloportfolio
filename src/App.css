@@ -15,17 +15,17 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+  background: linear-gradient(135deg, var(--secondary), var(--primary));
 }
 
 ::selection {
-  background: rgba(100, 200, 255, 0.3);
-  color: var(--primary-color);
+  background: rgba(0, 209, 255, 0.3);
+  color: var(--text-light);
 }
 
 @keyframes fadeInUp {
