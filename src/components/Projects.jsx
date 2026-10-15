@@ -32,7 +32,7 @@ export default function Projects() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true, amount: 0.3 }}
         >
-          Mes Projets
+          Projets sélectionnés
         </motion.h2>
 
         <motion.div
@@ -45,12 +45,17 @@ export default function Projects() {
           {projects.map((project) => (
             <motion.div
               key={project.id}
-              className={`project-card ${project.featured ? 'featured' : ''}`}
+              className={`project-card ${project.featured ? 'featured' : ''} project-card-${project.id}`}
               variants={itemVariants}
               whileHover={{ y: -10 }}
-              onClick={() => project.link !== '#' && window.open(project.link)}
             >
-              <div className="project-image">
+              <div className={`project-image project-image-${project.id}`} aria-hidden="true">
+                <div className="project-art-window">
+                  <span className="project-art-kicker">PROJET · 0{project.id}</span>
+                  <span className="project-art-letter">{project.title.charAt(0)}</span>
+                  <span className="project-art-name">{project.title}</span>
+                  <div className="project-art-bars"><i /><i /><i /></div>
+                </div>
                 <span className="project-emoji">{project.image}</span>
               </div>
 
@@ -82,12 +87,12 @@ export default function Projects() {
                     whileHover={{ x: 5 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    Voir le projet →
+                    Voir le projet <span aria-hidden="true">↗</span>
                   </motion.a>
                 )}
               </div>
 
-              {project.featured && <div className="featured-badge">Featured</div>}
+              {project.featured && <div className="featured-badge">Sélection</div>}
             </motion.div>
           ))}
         </motion.div>

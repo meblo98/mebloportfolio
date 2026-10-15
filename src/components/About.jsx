@@ -34,28 +34,28 @@ export default function About() {
           <motion.div variants={itemVariants} className="about-text">
             <h2 className="section-title">À propos</h2>
             <p>
-              Développeur web passionné avec une solide expérience dans la conception d'applications robustes utilisant Laravel et Angular. Je me spécialise dans la création et la consommation d'API REST, ainsi que dans le développement de dashboards dynamiques et performants.
+              Je suis développeur web full stack, formé en développement logiciel et basé à Dakar. J’interviens sur des applications métier avec Laravel et Angular, de la conception des API à la réalisation d’interfaces claires.
             </p>
             <p>
-              Mon expertise couvre l'ensemble du cycle de développement, de l'intégration UI/UX responsive à la gestion de l'authentification complexe et des rôles utilisateurs. J'accorde une importance capitale à l'ergonomie et à la sécurité de mes solutions.
+              Mon approche associe attention aux usages, intégration responsive et bases solides côté serveur : authentification, rôles, données et échanges entre services.
             </p>
             <p>
-              Tourné vers l'avenir, j'approfondis actuellement mes compétences en <strong>Analyse de Données</strong> pour apporter une dimension prédictive et analytique à mes futurs développements web.
+              En parallèle du développement web, j’approfondis l’<strong>analyse de données</strong> pour mieux comprendre les besoins et aider les équipes à prendre des décisions éclairées.
             </p>
           </motion.div>
 
           <motion.div variants={itemVariants} className="about-stats">
             <div className="stat">
-              <h3 className="stat-number">2025</h3>
-              <p className="stat-label">Objectif : Data Analysis</p>
+              <h3 className="stat-number">API</h3>
+              <p className="stat-label">Conception & intégration</p>
             </div>
             <div className="stat">
-              <h3 className="stat-number">Full</h3>
-              <p className="stat-label">Stack Developer</p>
+              <h3 className="stat-number">Web</h3>
+              <p className="stat-label">Frontend & backend</p>
             </div>
             <div className="stat">
-              <h3 className="stat-number">Dakar</h3>
-              <p className="stat-label">Sénégal</p>
+              <h3 className="stat-number">Data</h3>
+              <p className="stat-label">En cours d’apprentissage</p>
             </div>
           </motion.div>
         </motion.div>

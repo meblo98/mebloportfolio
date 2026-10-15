@@ -16,7 +16,7 @@ export default function Footer() {
       >
         <div className="footer-section">
           <h3>meblo</h3>
-          <p>Développeur Web Full Stack passionné par la création de solutions innovantes et performantes pour le web.</p>
+          <p>Développeur web à Dakar. Je conçois des applications métier avec Laravel, Angular et JavaScript.</p>
         </div>
 
         <div className="footer-section">
@@ -81,7 +81,7 @@ export default function Footer() {
         viewport={{ once: true, amount: 0.3 }}
       >
         <p>&copy; {currentYear} meblo. Tous droits réservés. | Basé au {personalInfo.location}</p>
-        <p className="footer-emoji">✨ Développé avec React & Framer Motion ✨</p>
+        <p className="footer-emoji">Laravel · Angular · API REST</p>
       </motion.div>
     </footer>
   );

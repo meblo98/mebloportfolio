@@ -22,6 +22,9 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const subject = encodeURIComponent(`Prise de contact — ${formData.name}`);
+    const body = encodeURIComponent(`Bonjour Mouhamed,\n\n${formData.message}\n\n${formData.name}\n${formData.email}`);
+    window.location.href = `mailto:${personalInfo.email}?subject=${subject}&body=${body}`;
     setSubmitted(true);
     setTimeout(() => {
       setFormData({ name: '', email: '', message: '' });

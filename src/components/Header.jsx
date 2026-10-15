@@ -20,13 +20,10 @@ export default function Header() {
 
   const navItems = [
     { name: 'Accueil', id: 'hero' },
-    { name: 'À propos', id: 'about' },
-    { name: 'Compétences', id: 'skills' },
-    { name: 'Expériences', id: 'experience' },
-    { name: 'Formations', id: 'education' },
-    { name: 'Certifications', id: 'certifications' },
+    { name: 'Profil', id: 'about' },
+    { name: 'Expertise', id: 'skills' },
+    { name: 'Parcours', id: 'experience' },
     { name: 'Projets', id: 'projects' },
-    { name: 'Contact', id: 'contact' },
   ];
 
   const scrollToSection = (id) => {
@@ -45,19 +42,22 @@ export default function Header() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <motion.div
+        <motion.a
+          href="#hero"
           className="logo"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
+          aria-label="Meblo, accueil"
         >
-          <span className="logo-bracket">&lt;</span>
-          <span className="logo-text">meblo</span>
-          <span className="logo-bracket">/&gt;</span>
-        </motion.div>
+          <span className="logo-mark">M.</span>
+          <span className="logo-text">meblo<span className="logo-dot">.</span></span>
+        </motion.a>
 
         <button
           className="menu-toggle"
           onClick={() => setIsOpen(!isOpen)}
+          aria-label={isOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
+          aria-expanded={isOpen}
         >
           <span></span>
           <span></span>
@@ -87,6 +87,8 @@ export default function Header() {
             </motion.button>
           ))}
         </motion.nav>
+
+        <a className="header-contact" href="#contact">Me contacter <span aria-hidden="true">↗</span></a>
       </motion.div>
     </header>
   );
