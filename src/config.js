@@ -58,6 +58,17 @@ export const skills = {
 
 // Expériences Professionnelles
 export const experiences = [
+  {
+    company: "Kart",
+    period: "Projet entrepreneurial",
+    role: "Cofondateur & développeur Full Stack",
+    description: [
+      "Cofondation d’une application de cartes de visite numériques avec technologie NFC",
+      "Prise en charge du projet de la conception à la mise en production",
+      "Conception et développement du backend, du frontend et de l’application mobile",
+      "Réalisation de l’ensemble des pipelines CI/CD et déploiement de l’application"
+    ]
+  },
       {
     company: "CERIP",
     period: "Septembre 2025 - Janvier 2026",
