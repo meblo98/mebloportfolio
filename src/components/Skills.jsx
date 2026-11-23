@@ -9,6 +9,7 @@ export default function Skills() {
     skills.databases,
     skills.devops,
     skills.data,
+    skills.bitcoin,
   ];
 
   const containerVariants = {

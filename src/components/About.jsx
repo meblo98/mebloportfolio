@@ -69,15 +69,11 @@ export default function About() {
         >
           <div className="image-wrapper">
             <div className="profile-image">
-              <div className="code-animation">
-                <pre>{`const meblo = {
-  nom: "Mouhamed El Bachir Lo",
-  role: "Développeur Full Stack",
-  stacks: ["Laravel", "Angular", "JS"],
-  learning: "Data Analysis 📊",
-  localisation: "Dakar, Sénégal 🇸🇳"
-}`}</pre>
-              </div>
+              <img
+                className="profile-photo"
+                src="/maphoto.jpeg"
+                alt="Portrait de Mouhamed El Bachir Lo"
+              />
             </div>
           </div>
         </motion.div>

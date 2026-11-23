@@ -48,6 +48,11 @@ export const skills = {
     category: "Data",
     icon: "📊",
     items: ["Analyse de données", "Manipulation de données", "Visualisation"],
+  },
+  bitcoin: {
+    category: "Bitcoin & Lightning",
+    icon: "⚡",
+    items: ["Bitcoin", "Lightning Network"],
   }
 };
 

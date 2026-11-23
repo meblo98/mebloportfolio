@@ -447,11 +447,9 @@ section:not(.hero) {
 .stat-number { color: var(--green); background: none; font-size: 1.35rem; letter-spacing: -0.04em; -webkit-text-fill-color: currentColor; }
 .stat-label { margin-top: 5px; color: #718076; font-size: 0.67rem; line-height: 1.35; }
 .about-image { width: 100%; }
-.image-wrapper { width: 100%; height: auto; aspect-ratio: 1 / 1.08; padding: 15px; border-radius: 25px; background: #edf3e8; }
+.image-wrapper { width: 100%; height: auto; aspect-ratio: 4 / 5; padding: 15px; border-radius: 25px; background: #edf3e8; }
 .profile-image { border: 0; border-radius: 16px; background: #14271e; box-shadow: 0 18px 40px rgba(26,55,38,0.12); }
 .profile-image::before { content: none; }
-.code-animation { padding: 24px; align-items: flex-start; }
-.code-animation pre { color: #d6e4d8; font-size: clamp(0.68rem, 1vw, 0.81rem); line-height: 1.85; }
 
 /* Expertise */
 .skills { background: #f1f5ec; }
@@ -642,9 +640,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid #8db66f; outline-offs
   .stat { padding: 13px 10px; }
   .stat-number { font-size: 1.1rem; }
   .stat-label { font-size: 0.6rem; }
-  .image-wrapper { max-width: 430px; margin-inline: auto; aspect-ratio: 1.15 / 1; }
-  .code-animation { padding: 18px; }
-  .code-animation pre { font-size: 0.68rem; }
+  .image-wrapper { max-width: 430px; margin-inline: auto; aspect-ratio: 4 / 5; }
   .skills-grid, .projects-grid, .contact-content { grid-template-columns: 1fr; }
   .skill-card { padding: 21px; }
   .experience-timeline { padding-left: 22px; }
